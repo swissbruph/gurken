@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gurken pflanzen, ernten und einmachen</title>
+<meta name="description" content="Wie du Gurken pflanzt, ziehst, bewässerst und erntest – und wie du sie im Einmachglas haltbar machst.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    color-scheme: light;
+    --ink: #22301b;
+    --muted: #55624d;
+    --red: #c8243a;
+    --dill: #55742f;
+    --brine: #f3ead0;
+    --line: #e4dccb;
+    --bg: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.65;
+  }
+  h1, h2, h3 {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+    line-height: 1.15;
+    margin: 0;
+  }
+  a { color: var(--red); }
+  a:focus-visible { outline: 3px solid var(--dill); outline-offset: 3px; border-radius: 3px; }
+
+  .gingham {
+    height: 36px;
+    background-color: #fff;
+    background-image:
+      linear-gradient(90deg, rgba(200,36,58,.55) 50%, transparent 50%),
+      linear-gradient(rgba(200,36,58,.55) 50%, transparent 50%);
+    background-size: 36px 36px;
+  }
+
+  .wrap { max-width: 46rem; margin: 0 auto; padding: 0 1.25rem; }
+
+  header { padding: 2.5rem 0 1.5rem; }
+  header h1 { font-size: clamp(2.2rem, 7vw, 3.6rem); font-weight: 700; letter-spacing: -0.01em; }
+  header p { margin: 1rem 0 0; color: var(--muted); max-width: 36rem; }
+
+  figure { margin: 0 0 1rem; }
+  figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 14px;
+  }
+  figcaption { font-size: .9rem; color: var(--muted); margin-top: .5rem; }
+
+  nav { padding: 1rem 0 0; }
+  nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .5rem; }
+  nav a {
+    display: inline-block;
+    padding: .4rem .9rem;
+    border: 1.5px solid var(--red);
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: .95rem;
+  }
+  nav a:hover { background: var(--red); color: #fff; }
+
+  section { padding: 2.75rem 0 .5rem; }
+  section h2 { font-size: clamp(1.6rem, 4.5vw, 2.1rem); color: var(--red); margin-bottom: 1rem; }
+  section h3 { font-size: 1.2rem; margin: 1.6rem 0 .4rem; }
+  p { margin: 0 0 1rem; }
+  ul, ol { padding-left: 1.3rem; margin: 0 0 1rem; }
+  li { margin-bottom: .45rem; }
+  li::marker { color: var(--dill); font-weight: 600; }
+
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10.5rem, 1fr));
+    gap: .75rem;
+    margin: 0 0 1.5rem;
+  }
+  .facts div { border-left: 4px solid var(--dill); padding: .2rem 0 .2rem .8rem; }
+  .facts dt { font-size: .9rem; color: var(--muted); }
+  .facts dd { margin: 0; font-weight: 600; }
+
+  .tip {
+    background: var(--brine);
+    border-radius: 10px;
+    padding: .9rem 1.1rem;
+    margin: 1.2rem 0;
+  }
+  .tip p:last-child { margin: 0; }
+
+  .recipe {
+    border: 2px solid var(--red);
+    border-radius: 14px;
+    padding: 1.5rem 1.25rem 1rem;
+    margin-top: .5rem;
+  }
+  .recipe h3:first-child { margin-top: 0; }
+
+  footer { padding: 3rem 0 2rem; color: var(--muted); font-size: .9rem; }
+  footer .gingham { margin-bottom: 1.5rem; }
+</style>
+</head>
+<body>
+
+<div class="gingham" aria-hidden="true"></div>
+
+<div class="wrap">
+  <header>
+    <h1>Gurken pflanzen, ernten und einmachen</h1>
+    <p>Vom Samenkorn bis ins Einmachglas: so wachsen kräftige Gurken im Garten oder auf dem Balkon, und so wirst du sie als knackige Gewürzgurken das ganze Jahr geniessen.</p>
+  </header>
+
+  <figure>
+    <img src="gurken.jpg" alt="Vier Einmachgläser mit eingelegten Gurken, Dill, Lorbeerblättern und Senfkörnern, verschlossen mit rot-weiss karierten Deckeln" width="1600" height="1200">
+    <figcaption>Selbst eingelegte Gurken im Glas: mit Dill, Lorbeer und Senfkörnern.</figcaption>
+  </figure>
+
+  <nav aria-label="Inhalt">
+    <ul>
+      <li><a href="#pflanzen">Pflanzen</a></li>
+      <li><a href="#ziehen">Ziehen</a></li>
+      <li><a href="#giessen">Bewässern</a></li>
+      <li><a href="#ernten">Ernten</a></li>
+      <li><a href="#einmachen">Einmachen</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="pflanzen">
+      <h2>Gurken pflanzen</h2>
+      <dl class="facts">
+        <div><dt>Vorziehen</dt><dd>ab Mitte April, drinnen</dd></div>
+        <div><dt>Auspflanzen</dt><dd>nach den Eisheiligen (ab Mitte Mai)</dd></div>
+        <div><dt>Keimtemperatur</dt><dd>22–25 °C</dd></div>
+        <div><dt>Pflanzabstand</dt><dd>50–60 cm</dd></div>
+      </dl>
+      <p>Gurken lieben Wärme und vertragen keinen Frost. Säe die Samen etwa 1–2 cm tief in kleine Töpfe mit Anzuchterde, halte sie gleichmässig feucht und stelle sie hell und warm. Nach 5 bis 10 Tagen keimen sie.</p>
+      <p>Pflanze die jungen Gurken erst nach draussen, wenn keine Fröste mehr drohen und die Nächte mild sind. Alternativ kannst du ab Mitte Mai direkt ins Beet säen.</p>
+      <h3>Der richtige Standort</h3>
+      <ul>
+        <li>sonnig und windgeschützt, zum Beispiel vor einer Süd- oder Westwand</li>
+        <li>lockerer, humusreicher Boden; arbeite vor dem Pflanzen reifen Kompost ein</li>
+        <li>im Topf oder Kübel mindestens 15 Liter Erde pro Pflanze</li>
+        <li>nicht jedes Jahr am gleichen Platz anbauen, denn Gurken brauchen drei bis vier Jahre Pause</li>
+      </ul>
+    </section>
+
+    <section id="ziehen">
+      <h2>Gurken ziehen und pflegen</h2>
+      <p>Gurken wachsen schnell und brauchen Halt. Mit einer Rankhilfe bleiben die Früchte sauber, die Blätter trocknen schneller ab und du sparst Platz.</p>
+      <ul>
+        <li><strong>Rankhilfe:</strong> ein Gitter, Schnüre oder ein Bambus-Tipi, etwa 1,5–2 m hoch. Leite die Triebe anfangs von Hand nach oben.</li>
+        <li><strong>Düngen:</strong> alle zwei Wochen mit Kompost, Brennnesseljauche oder organischem Gemüsedünger. Gurken sind Starkzehrer.</li>
+        <li><strong>Mulchen:</strong> eine Schicht Rasenschnitt oder Stroh hält den Boden feucht und warm.</li>
+        <li><strong>Schneiden:</strong> bei Salatgurken entfernst du Seitentriebe bis zur Höhe von etwa 50 cm. Einlegegurken wachsen buschiger und brauchen kaum Schnitt.</li>
+        <li><strong>Mischkultur:</strong> Dill, Bohnen, Zwiebeln und Salat sind gute Nachbarn.</li>
+      </ul>
+      <div class="tip">
+        <p><strong>Tipp:</strong> Für das Einlegen eignen sich besonders Sorten, die als «Einlegegurke», «Gewürzgurke» oder «Cornichon» angeboten werden. Sie sind kleiner und fester als Salatgurken.</p>
+      </div>
+    </section>
+
+    <section id="giessen">
+      <h2>Gurken bewässern</h2>
+      <p>Gurken bestehen zu etwa 95 % aus Wasser. Trockenheit macht sie bitter, zu viel Nässe fördert Fäulnis und Mehltau.</p>
+      <ul>
+        <li>Giesse regelmässig und gründlich, im Sommer in der Regel 2–3 Mal pro Woche. An heissen Tagen kann täglich nötig sein.</li>
+        <li>Giesse am besten morgens und direkt an den Wurzeln, nicht über die Blätter.</li>
+        <li>Verwende abgestandenes oder Regenwasser. Eiskaltes Leitungswasser stresst die Pflanzen.</li>
+        <li>Die Erde soll gleichmässig feucht sein, aber nie im Wasser stehen. Im Topf braucht es Abzugslöcher.</li>
+        <li>Mit einer Mulchschicht verdunstet weniger Wasser.</li>
+      </ul>
+      <div class="tip">
+        <p><strong>Fingerprobe:</strong> Stecke einen Finger 3 cm tief in die Erde. Fühlt sie sich trocken an, ist es Zeit zum Giessen.</p>
+      </div>
+    </section>
+
+    <section id="ernten">
+      <h2>Gurken ernten</h2>
+      <dl class="facts">
+        <div><dt>Erntezeit</dt><dd>Juli bis September</dd></div>
+        <div><dt>Einlegegurken</dt><dd>6–12 cm lang</dd></div>
+        <div><dt>Salatgurken</dt><dd>25–35 cm lang</dd></div>
+        <div><dt>Rhythmus</dt><dd>alle 2–3 Tage</dd></div>
+      </dl>
+      <ul>
+        <li>Schneide die Früchte mit Messer oder Schere ab und lass ein kleines Stück Stiel dran. Abreissen schadet der Pflanze.</li>
+        <li>Ernte die Gurken, solange sie noch dunkelgrün, fest und glatt sind. Gelbe Gurken sind überreif und schmecken bitter.</li>
+        <li>Wer häufig erntet, regt die Pflanze an, weiter Früchte zu bilden.</li>
+        <li>Verarbeite Einlegegurken am besten am selben Tag oder spätestens am nächsten. So bleiben sie knackig.</li>
+      </ul>
+    </section>
+
+    <section id="einmachen">
+      <h2>Gurken im Einmachglas einlegen</h2>
+      <p>Dieses Rezept ergibt knackige Gewürzgurken im süss-sauren Sud mit Dill, Lorbeer und Senfkörnern, so wie auf dem Bild oben.</p>
+
+      <div class="recipe">
+        <h3>Zutaten für 4 Gläser à 500 ml</h3>
+        <ul>
+          <li>1,5 kg kleine, feste Einlegegurken</li>
+          <li>4 Dolden Dill oder 1 grosses Bund Dillkraut</li>
+          <li>4 Lorbeerblätter</li>
+          <li>4 Knoblauchzehen, geschält</li>
+          <li>2 TL Senfkörner</li>
+          <li>1 TL bunte Pfefferkörner</li>
+        </ul>
+
+        <h3>Für den Sud</h3>
+        <ul>
+          <li>1 Liter Wasser</li>
+          <li>250 ml Weissweinessig (5 % Säure)</li>
+          <li>2 EL Salz (ca. 40 g)</li>
+          <li>3 EL Zucker</li>
+        </ul>
+
+        <h3>Zubereitung</h3>
+        <ol>
+          <li><strong>Gläser vorbereiten:</strong> Gläser und Deckel heiss ausspülen und mit kochendem Wasser übergiessen oder 10 Minuten im Backofen bei 120 °C sterilisieren. Kopfüber auf einem sauberen Tuch trocknen lassen.</li>
+          <li><strong>Gurken vorbereiten:</strong> Gurken gründlich waschen und die Blütenansätze an beiden Enden abschneiden. Je nach Grösse im Ganzen lassen oder längs vierteln.</li>
+          <li><strong>Gläser füllen:</strong> In jedes Glas 1 Lorbeerblatt, 1 Knoblauchzehe, etwas Dill, ½ TL Senfkörner und ein paar Pfefferkörner geben. Die Gurken senkrecht und fest hineinschichten, oben bleiben etwa 1–2 cm Platz.</li>
+          <li><strong>Sud kochen:</strong> Wasser, Essig, Salz und Zucker in einem Topf aufkochen und 2 Minuten sprudelnd kochen, bis sich alles aufgelöst hat.</li>
+          <li><strong>Aufgiessen:</strong> Den heissen Sud bis knapp unter den Rand über die Gurken giessen. Alle Gurken müssen vollständig bedeckt sein. Luftblasen mit einem Holzstäbchen entfernen und den Glasrand sauber abwischen.</li>
+          <li><strong>Verschliessen:</strong> Sofort fest zudrehen. Für längere Haltbarkeit die Gläser zusätzlich 15 Minuten bei 80 °C im Wasserbad oder Backofen einkochen. Auskühlen lassen.</li>
+          <li><strong>Ziehen lassen:</strong> Kühl und dunkel mindestens 2 Wochen durchziehen lassen, dann schmecken sie am besten.</li>
+        </ol>
+
+        <h3>Haltbarkeit</h3>
+        <p>Gut verschlossen und einmal eingekocht halten die Gurken an einem kühlen, dunklen Ort etwa 6 bis 12 Monate. Prüfe vor dem Öffnen, ob der Deckel nach innen gewölbt ist. Ein geöffnetes Glas gehört in den Kühlschrank und sollte innerhalb von 2 Wochen aufgebraucht werden. Bei Schimmel, Gärgeruch oder gewölbtem Deckel wirfst du das Glas weg.</p>
+      </div>
+
+      <div class="tip">
+        <p><strong>Für extra Knackigkeit:</strong> Lege die frisch geernteten Gurken vor dem Einlegen 2–3 Stunden in kaltes Wasser. Ein frisches Weinblatt oder Kirschblatt im Glas hilft ebenfalls.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="gingham" aria-hidden="true"></div>
+    <p><strong>Dietiker Familiengarten</strong><br>
+    Team Monika, Yolanda, Tesi und Philippe<br>
+    Seit über 50 Jahren im Schrebergarten Vogelau</p>
+    <p>Viel Freude beim Gärtnern und Einmachen!</p>
+  </footer>
+</div>
+
+</body>
+</html>
